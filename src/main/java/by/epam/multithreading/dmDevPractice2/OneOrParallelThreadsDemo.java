@@ -1,6 +1,9 @@
 package by.epam.multithreading.dmDevPractice2;
 
 import java.util.Random;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.function.Supplier;
 import java.util.stream.IntStream;
 
@@ -22,8 +25,27 @@ public class OneOrParallelThreadsDemo {
         long endTime = System.currentTimeMillis();
         System.out.println("One stream measuring (max=" + result + ") " + (endTime-startTime) + "sec.");*/
 
-        trackTime(() -> findMax(values));
-        trackTime(() -> findMaxParallel(values));
+//        trackTime(() -> findMax(values));
+
+//        trackTime(() -> findMaxParallel(values));
+
+        ExecutorService threadPool = Executors.newFixedThreadPool(10);
+        trackTime(() -> {
+            try {
+                return findMaxParallel(values, threadPool);
+            } catch (ExecutionException | InterruptedException e) {
+                e.printStackTrace();
+            }
+            return Integer.MIN_VALUE;
+        });
+        threadPool.shutdownNow();
+    }
+
+    private static int findMaxParallel(int[] values, ExecutorService executorService) throws ExecutionException, InterruptedException {
+        return executorService.submit(() -> IntStream.of(values)
+                .parallel()
+                .max()
+                .orElse(Integer.MIN_VALUE)).get();
     }
 
     private static void trackTime(Supplier<Integer> task) {

@@ -25,9 +25,9 @@ public class OneOrParallelThreadsDemo {
         long endTime = System.currentTimeMillis();
         System.out.println("One stream measuring (max=" + result + ") " + (endTime-startTime) + "sec.");*/
 
-//        trackTime(() -> findMax(values));
+        trackTime(() -> findMax(values));
 
-//        trackTime(() -> findMaxParallel(values));
+        trackTime(() -> findMaxParallel(values));
 
         ExecutorService threadPool = Executors.newFixedThreadPool(10);
         trackTime(() -> {

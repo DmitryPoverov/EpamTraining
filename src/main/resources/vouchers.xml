@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vouchers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="test"
+          xsi:schemaLocation="test vouchers.xsd">
+    <voucher>
+        <country>Mexico</country>
+        <numberOfDays>10</numberOfDays>
+        <hotelCharacteristics>
+            <numberOfStars>5</numberOfStars>
+            <roomType>triple</roomType>
+        </hotelCharacteristics>
+        <cost>500</cost>
+    </voucher>
+    <voucher>
+        <country>USA</country>
+        <numberOfDays>2</numberOfDays>
+        <hotelCharacteristics>
+            <numberOfStars>4</numberOfStars>
+            <roomType>double</roomType>
+        </hotelCharacteristics>
+        <cost>1000</cost>
+    </voucher>
+</vouchers>

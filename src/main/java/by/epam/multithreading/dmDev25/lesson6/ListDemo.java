@@ -7,7 +7,7 @@ import java.util.List;
 public class ListDemo {
     public static void main(String[] args) throws InterruptedException {
 
-// This action is really power-hungry
+// This operation is really power-hungry
         List<Integer> integers = Collections.synchronizedList(new ArrayList<>());
 
         ListThread listThread0 = new ListThread(integers);

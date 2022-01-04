@@ -5,7 +5,7 @@ package by.epam.multithreading.dmDev25.lesson4and5;
  * их, дождаться выполнения и вывести на консоль в текущее значение нашего счетчика: counter.getCount()
  */
 
-public class CounterMain {
+public class SynchronizedDemo {
     public static void main(String[] args) {
 
         Counter counter = new Counter();

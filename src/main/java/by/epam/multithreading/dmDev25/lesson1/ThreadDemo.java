@@ -1,6 +1,6 @@
 package by.epam.multithreading.dmDev25.lesson1;
 
-public class Runner {
+public class ThreadDemo {
     public static void main(String[] args) throws InterruptedException {
 
 //      Thread thread0 = new SimpleThread();

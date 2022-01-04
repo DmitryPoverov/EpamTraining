@@ -2,7 +2,7 @@ package by.epam.multithreading.dmDev25.lesson2and3;
 
 import by.epam.multithreading.dmDev25.utils.DmDevUtils;
 
-public class Runner {
+public class RunnableDemo {
     public static void main(String[] args) throws InterruptedException {
 
         Thread runnableThread = new Thread(new RunnableThread());

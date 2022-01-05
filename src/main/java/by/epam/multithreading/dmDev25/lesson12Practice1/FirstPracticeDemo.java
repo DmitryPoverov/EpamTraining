@@ -1,4 +1,4 @@
-package by.epam.multithreading.dmDevPractice1;
+package by.epam.multithreading.dmDev25.lesson12Practice1;
 
 import java.util.LinkedList;
 import java.util.Queue;

@@ -1,4 +1,4 @@
-package by.epam.multithreading.dmDev25.lesson4and5;
+package by.epam.multithreading.dmDev25.lesson4and5AtomicSynchronized;
 
 /**
  * 3. В методе main создать 4 потока типа CounterThread, передав один и тот же объект Counter и запустить

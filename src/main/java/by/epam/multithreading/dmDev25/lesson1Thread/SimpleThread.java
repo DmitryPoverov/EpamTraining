@@ -1,4 +1,4 @@
-package by.epam.multithreading.dmDev25.lesson1;
+package by.epam.multithreading.dmDev25.lesson1Thread;
 
 public class SimpleThread extends Thread{
 

@@ -1,4 +1,4 @@
-package by.epam.multithreading.dmDev25.lesson2and3;
+package by.epam.multithreading.dmDev25.lesson2and3RunnableStates;
 
 import by.epam.multithreading.dmDev25.utils.DmDevUtils;
 

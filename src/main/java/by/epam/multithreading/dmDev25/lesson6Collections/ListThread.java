@@ -1,4 +1,4 @@
-package by.epam.multithreading.dmDev25.lesson6;
+package by.epam.multithreading.dmDev25.lesson6Collections;
 
 import java.util.List;
 

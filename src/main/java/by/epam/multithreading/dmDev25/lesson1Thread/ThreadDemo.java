@@ -1,4 +1,4 @@
-package by.epam.multithreading.dmDev25.lesson1;
+package by.epam.multithreading.dmDev25.lesson1Thread;
 
 public class ThreadDemo {
     public static void main(String[] args) throws InterruptedException {

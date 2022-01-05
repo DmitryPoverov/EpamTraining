@@ -1,4 +1,4 @@
-package by.epam.multithreading.dmDev25.lesson4and5;
+package by.epam.multithreading.dmDev25.lesson4and5AtomicSynchronized;
 
 /**
  * 1. Создать класс Counter с одним полем:

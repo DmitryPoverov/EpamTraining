@@ -1,4 +1,4 @@
-package by.epam.multithreading.dmDev25.lesson4and5;
+package by.epam.multithreading.dmDev25.lesson4and5AtomicSynchronized;
 
 /**
  * 2. Создать класс CounterThread c одним полем и конструктором для инициализации:

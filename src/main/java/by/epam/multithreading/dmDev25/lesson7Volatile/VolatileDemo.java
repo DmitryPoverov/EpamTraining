@@ -12,7 +12,7 @@ public class VolatileDemo {
             }
         });
         thread1.start();
-        Thread.sleep(1L);
+        Thread.sleep(10L);
 
         Thread thread2 = new Thread(() -> {
             flag = true;

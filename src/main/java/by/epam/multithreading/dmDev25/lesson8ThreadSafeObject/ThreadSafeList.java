@@ -8,6 +8,7 @@ public class ThreadSafeList {
     private List<Integer> list;
 
     public ThreadSafeList(List<Integer> list) {
+        // this code works only on java 15 and higher: this.list = List.copyOf(list);
         this.list = list;
     }
 

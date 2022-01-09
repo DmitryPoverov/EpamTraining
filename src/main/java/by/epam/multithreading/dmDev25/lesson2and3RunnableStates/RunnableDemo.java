@@ -1,6 +1,6 @@
 package by.epam.multithreading.dmDev25.lesson2and3RunnableStates;
 
-import by.epam.multithreading.dmDev25.utils.DmDevUtils;
+import by.epam.multithreading.dmDev25.lesson2and3RunnableStates.utils.DmDevUtils;
 
 public class RunnableDemo {
     public static void main(String[] args) throws InterruptedException {

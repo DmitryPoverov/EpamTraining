@@ -1,4 +1,4 @@
-package by.epam.multithreading.dmDev25.utils;
+package by.epam.multithreading.dmDev25.lesson2and3RunnableStates.utils;
 
 public final class DmDevUtils {
 

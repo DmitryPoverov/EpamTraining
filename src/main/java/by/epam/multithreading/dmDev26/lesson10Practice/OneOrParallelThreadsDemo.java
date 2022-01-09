@@ -1,4 +1,4 @@
-package by.epam.multithreading.dmDevPractice2;
+package by.epam.multithreading.dmDev26.lesson10Practice;
 
 import java.util.Random;
 import java.util.concurrent.ExecutionException;

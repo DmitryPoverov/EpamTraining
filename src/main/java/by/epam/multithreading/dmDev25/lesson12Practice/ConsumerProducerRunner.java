@@ -1,11 +1,13 @@
-package by.epam.multithreading.dmDev25.lesson12Practice1;
+package by.epam.multithreading.dmDev25.lesson12Practice;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class FirstPracticeDemo {
+public class ConsumerProducerRunner {
     public static void main(String[] args) throws InterruptedException {
+
         Queue<Integer> queue = new LinkedList<>();
+
         Thread producerThread = new Thread(new ProducerThread(queue));
         Thread consumerThread = new Thread(new ConsumerThread(queue));
 
@@ -14,6 +16,5 @@ public class FirstPracticeDemo {
 
         producerThread.join();
         consumerThread.join();
-
     }
 }

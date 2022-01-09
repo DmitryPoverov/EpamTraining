@@ -1,4 +1,4 @@
-package by.epam.multithreading.dmDev25.lesson12Practice1;
+package by.epam.multithreading.dmDev25.lesson12Practice;
 
 import java.util.Random;
 
@@ -11,9 +11,9 @@ public final class RandomUtil { // cause the class is util we add access modifie
     }
 
     public static int getRandom() {
-        return RANDOM.nextInt(DEFAULT_BOUND);
+        return RANDOM.nextInt(DEFAULT_BOUND)+1; //I added this +1 to eliminate wait(0) in the producer/consumer
     }
     public static int getRandom(int bound) {
-        return RANDOM.nextInt(bound);
+        return RANDOM.nextInt(bound)+1;
     }
 }

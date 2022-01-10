@@ -1,4 +1,4 @@
-package by.epam.multithreading.dmDev26.lesson10Practice;
+package by.epam.multithreading.dmDev26.lesson10Practice.firstTrying;
 
 import java.util.Random;
 import java.util.concurrent.ExecutionException;
@@ -23,7 +23,8 @@ public class OneOrParallelThreadsDemo {
         long startTime = System.currentTimeMillis();
         int result = findMax(values);
         long endTime = System.currentTimeMillis();
-        System.out.println("One stream measuring (max=" + result + ") " + (endTime-startTime) + "sec.");*/
+        System.out.println("One stream measuring (max=" + result + ") " + (endTime-startTime) + "sec.");
+*/
 
         trackTime(() -> findMax(values));
 

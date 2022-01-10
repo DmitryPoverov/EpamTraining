@@ -1,4 +1,4 @@
-package by.epam.multithreading.dmDev26.lesson10Practice;
+package by.epam.multithreading.dmDev26.lesson10Practice.firstTrying;
 
 import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
